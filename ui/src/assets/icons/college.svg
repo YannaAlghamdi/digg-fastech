@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.17" height="17.783" viewBox="0 0 19.17 17.783">
+  <g id="_1F4D2" data-name="1F4D2" transform="translate(0.5 0.5)">
+    <g id="color" transform="translate(1.387 0)">
+      <path id="Path_923" data-name="Path 923" d="M30.247,26.479a.343.343,0,0,0,.342-.343V11.355a.343.343,0,0,0-.342-.343H15.5a.343.343,0,0,0-.342.343v9.108l12.107,6.015h2.982Z" transform="translate(-13.807 -11.012)" fill="#fcea2b"/>
+      <path id="Path_924" data-name="Path 924" d="M30.893,26.12a.335.335,0,0,0,.335-.335V11.347a.335.335,0,0,0-.335-.335H16.455a.335.335,0,0,0-.335.335V26.12Z" transform="translate(-14.445 -11.012)" fill="#fcea2b"/>
+      <path id="Path_925" data-name="Path 925" d="M16.12,11.347a.335.335,0,0,1,.335-.335H30.893a.335.335,0,0,1,.335.335V25.785a.335.335,0,0,1-.335.335" transform="translate(-14.445 -11.012)" fill="#fcea2b"/>
+      <path id="Path_926" data-name="Path 926" d="M25.9,31.108H11.467a.335.335,0,0,1-.335-.335V16.335A.335.335,0,0,1,11.467,16H25.9a.335.335,0,0,1,.335.335V30.773A.335.335,0,0,1,25.9,31.108Z" transform="translate(-11.132 -14.325)" fill="#f1b31c"/>
+    </g>
+    <g id="line" transform="translate(0 0)">
+      <path id="Path_927" data-name="Path 927" d="M16.12,11.347a.335.335,0,0,1,.335-.335H30.893a.335.335,0,0,1,.335.335V25.785a.335.335,0,0,1-.335.335" transform="translate(-13.058 -11.012)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_928" data-name="Path 928" d="M25.9,31.108H11.467a.335.335,0,0,1-.335-.335V16.335A.335.335,0,0,1,11.467,16H25.9a.335.335,0,0,1,.335.335V30.773A.335.335,0,0,1,25.9,31.108Z" transform="translate(-9.745 -14.325)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_113" data-name="Line 113" x2="2.925" transform="translate(0 4.163)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_114" data-name="Line 114" x2="2.925" transform="translate(0 6.189)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_115" data-name="Line 115" x2="2.925" transform="translate(0 8.215)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_116" data-name="Line 116" x1="2.925" transform="translate(0 10.242)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_117" data-name="Line 117" x2="2.925" transform="translate(0 12.268)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_118" data-name="Line 118" x2="2.925" transform="translate(0 14.294)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
