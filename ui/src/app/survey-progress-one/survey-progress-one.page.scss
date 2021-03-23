@@ -1,0 +1,86 @@
+ion-content {
+    background-image: url(/assets/images/bg-pages.png) !important;
+      --background: none;
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 100% 120%;
+  }
+  
+  *, ion-label {
+    font-family: 'Sora Regular' !important;
+  }
+  
+  
+  .contact-label {
+    --padding-start: 0;
+  }
+  .grid {
+    height: 100%;
+  }
+
+
+  .logo-text {
+    font-family: 'IBM Bold' !important;
+    color: #000;
+    font-size: 2rem;
+  }
+
+  ion-progress-bar {
+    height: 0.7rem;
+    border-radius: 1rem; 
+    --background: #ececec;
+    --progress-background: linear-gradient(to bottom right, #4734E1, #8E27EA);
+
+  }
+
+  .question {
+      margin-top: 1rem;
+      margin-left: 3rem;
+  }
+  
+  .first-question {
+      margin-top: 5rem;
+  }
+
+  ion-label {
+      line-height: 2;
+  }
+
+  ion-button {
+    --box-shadow: 0 0 black;
+    --background: #EFEFEF;
+    color: black;
+    --border-radius: 2rem;
+    height: 4rem;
+    width: 10rem;
+  }
+
+  ion-icon {
+      padding-right: 1rem;
+  }
+
+
+.button-col {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    
+    ion-button {
+      --box-shadow: 0 0 black;
+      --border-radius: 2rem;
+      --background: linear-gradient(to bottom right, #4734E1, #8E27EA);
+      text-transform: capitalize;
+      height: 4rem;
+      color: #fff;
+      font-size: 1rem;
+      width: 15rem;
+      font-family: 'Sora Light' !important;
+    }
+
+    .clear-btn {
+        --background: transparent !important;
+        color: #000 !important;
+        --border-color: #707070;
+        --border-width: 1px;
+        --border-style: solid;
+    }
+  }

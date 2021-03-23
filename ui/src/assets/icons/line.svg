@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.245" height="28.006" viewBox="0 0 27.245 28.006">
+  <g id="line" transform="translate(0.703 0.703)">
+    <path id="Path_903" data-name="Path 903" d="M29.526,12.777q.277.183.54.394c3.675,2.962,3.665,9.071-.022,13.645s-9.654,5.881-13.329,2.92a6.959,6.959,0,0,1-.792-.747" transform="translate(-9.649 -7.445)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <ellipse id="Ellipse_69" data-name="Ellipse 69" cx="10.584" cy="8.063" rx="10.584" ry="8.063" transform="matrix(0.628, -0.779, 0.779, 0.628, 0, 16.48)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_98" data-name="Line 98" x2="1.198" y2="1.012" transform="translate(19.197 18.36)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_99" data-name="Line 99" x2="1.056" y2="1.135" transform="translate(17.936 19.725)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_100" data-name="Line 100" x2="0.867" y2="1.211" transform="translate(16.603 20.835)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_101" data-name="Line 101" x2="0.683" y2="1.219" transform="translate(15.139 21.811)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_102" data-name="Line 102" x2="1.272" y2="0.88" transform="translate(20.167 16.996)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_904" data-name="Path 904" d="M20.652,29.65c.026-.084.222-.807.248-.891,2.157.038,2.263-.033,2.584-1.1.606-2.008.782-2.367,1.387-4.376.212-.7.175-.858-.835-1.051l-.615-.113c.023-.074.161-.756.184-.83A34.357,34.357,0,0,0,28.058,21l-2,6.926c-.313,1.081-.274,1.168,1.8,1.568-.024.086-.218.809-.242.894Z" transform="translate(-12.654 -12.673)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
