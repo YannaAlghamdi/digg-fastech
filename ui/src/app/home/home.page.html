@@ -1,20 +1,164 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid class="grid">
+    <ion-row class="ion-padding row">
+      <ion-col class="ion-padding">
+        <ion-label class="logo-text ion-padding">digg</ion-label>
+        <ion-row>
+          <ion-col class="quote">
+            <ion-label>
+              "Coming to Dubai with One Step Dubai has been the best decision of my life. I am <br />
+              now living in Dubai with
+              a good job and I will be getting married next year!" <br /><br />
+            </ion-label>
+            <ion-label>
+              Mohammed, One Step Dubai student <br />
+              Pakistan
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col class="form-col">
+        <form [formGroup]="form">
+          <ion-row>
+            <ion-col class="header-col ion-text-center">
+              <ion-label class="form-header">Apply now to work in Dubai</ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none" class="input">
+                <ion-label position="floating">
+                  First Name
+                </ion-label>
+                <ion-input formControlName="firstName"></ion-input>
+              </ion-item>
+              <small
+                *ngIf="form.get('firstName').hasError('required') && (form.get('firstName').dirty || form.get('firstName').touched)"
+                class="error-message">First name is required</small>
+            </ion-col>
+            <ion-col>
+              <ion-item lines="none" class="input">
+                <ion-label position="floating">
+                  Last Name
+                </ion-label>
+                <ion-input formControlName="lastName"></ion-input>
+              </ion-item>
+              <small
+                *ngIf="form.get('lastName').hasError('required') && (form.get('lastName').dirty || form.get('lastName').touched)"
+                class="error-message">Last name is required</small>
+            </ion-col>
+          </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none" class="input">
+                <ion-label position="floating">
+                  Date of Birth
+                </ion-label>
+                <ion-datetime formControlName="birthdate"></ion-datetime>
+              </ion-item>
+              <small
+                *ngIf="form.get('birthdate').hasError('required') && (form.get('birthdate').dirty || form.get('birthdate').touched)"
+                class="error-message">Date of birth is required</small>
+            </ion-col>
+            <ion-col class="gender-section">
+              <ion-label position="floating">
+                Gender
+              </ion-label>
+              <div class="gender-options">
+                <div class="ion-float-left checkbox">
+                  <ion-checkbox (click)="setGender('male')" [checked]="isMaleChecked" class="checkbox"
+                    name="receive_calls"></ion-checkbox>
+                  <ion-label class="option" text-uppercase>Male</ion-label>
+                </div>
+                <div float-right class="checkbox">
+                  <ion-checkbox (click)="setGender('female')" [checked]="isFemaleChecked" class="checkbox"
+                    name="receive_messages"></ion-checkbox>
+                  <ion-label class="option" text-uppercase>Female</ion-label>
+                </div>
+              </div>
+
+              <small
+                *ngIf="form.get('gender').hasError('required') && (form.get('gender').dirty || form.get('gender').touched)"
+                class="error-message">Gender is required</small>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none" class="input">
+                <ion-label position="floating">
+                  Nationality
+                </ion-label>
+                <ion-select formControlName="nationality">
+                  <ion-select-option *ngFor="let nationality of nationalities">{{nationality}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+
+              <small
+                *ngIf="form.get('nationality').hasError('required') && (form.get('nationality').dirty || form.get('nationality').touched)"
+                class="error-message">Nationality is required</small>
+            </ion-col>
+            <ion-col>
+              <ion-item lines="none" class="input">
+                <ion-label position="floating">
+                  Country of residence
+                </ion-label>
+                <ion-select formControlName="country">
+                  <ion-select-option *ngFor="let country of countries">{{country}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+
+              <small
+                *ngIf="form.get('country').hasError('required') && (form.get('country').dirty || form.get('country').touched)"
+                class="error-message">Country is required</small>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none" class="contact-label" lines="none">
+                <ion-label>How we can contact you?</ion-label>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none" class="input">
+                <ion-label position="floating">
+                  Contact Number
+                </ion-label>
+                <ion-input formControlName="contactNo"></ion-input>
+              </ion-item>
+
+              <small
+                *ngIf="form.get('contactNo').hasError('required') && (form.get('contactNo').dirty || form.get('contactNo').touched)"
+                class="error-message">Contact number is required</small>
+            </ion-col>
+
+            <ion-col>
+              <ion-item lines="none" class="input">
+                <ion-label position="floating">
+                  Email address
+                </ion-label>
+                <ion-input formControlName="emailAddress"></ion-input>
+              </ion-item>
+              <small
+                *ngIf="form.get('emailAddress').hasError('required') && (form.get('emailAddress').dirty || form.get('emailAddress').touched)"
+                class="error-message">Email address is required</small>
+            </ion-col>
+          </ion-row>
+        </form>
+        <ion-row>
+          <ion-col class="button-col">
+            <ion-button [disabled]="!form.valid" (click)="submit()">
+              Apply Now
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>
