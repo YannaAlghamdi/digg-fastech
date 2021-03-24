@@ -25,7 +25,7 @@ export class SurveyProgressTwoPage implements OnInit {
 
   next() {
     console.log(this.form);
-    this.router.navigate(['two']);
+    this.router.navigate(['three']);
   }
 
   setPurpose(purpose: string) {
