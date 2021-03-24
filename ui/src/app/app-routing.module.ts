@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'two',
     loadChildren: () => import('./survey-progress-two/survey-progress-two.module').then(m => m.SurveyProgressTwoPageModule)
   },
+  {
+    path: 'three',
+    loadChildren: () => import('./survey-progress-three/survey-progress-three.module').then(m => m.SurveyProgressThreePageModule)
+  },
 ];
 
 @NgModule({
