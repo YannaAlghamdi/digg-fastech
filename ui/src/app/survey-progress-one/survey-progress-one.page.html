@@ -17,13 +17,13 @@
     </ion-row>
     <ion-row class="question">
       <ion-col size="2">
-        <ion-button>
+        <ion-button (click)="setVisitField(false)" [class.selected]="!isVisiting">
           <ion-icon src="assets/icons/thumbs-down.svg"></ion-icon>
           No
         </ion-button>
       </ion-col>
       <ion-col size="2">
-        <ion-button>
+        <ion-button (click)="setVisitField(true)" [class.selected]="isVisiting">
           <ion-icon src="assets/icons/thumbs-up.svg"></ion-icon>
           Yes
         </ion-button>
@@ -39,13 +39,13 @@
     </ion-row>
     <ion-row class="question">
       <ion-col size="2">
-        <ion-button>
+        <ion-button (click)="setFriendsField(false)" [class.selected]="!hasFriends">
           <ion-icon src="assets/icons/thumbs-down.svg"></ion-icon>
           No
         </ion-button>
       </ion-col>
       <ion-col size="2">
-        <ion-button>
+        <ion-button (click)="setFriendsField(true)" [class.selected]="hasFriends">
           <ion-icon src="assets/icons/thumbs-up.svg"></ion-icon>
           Yes
         </ion-button>
@@ -61,30 +61,30 @@
     </ion-row>
     <ion-row class="question">
       <ion-col size="2">
-        <ion-button>
+        <ion-button (click)="setDuration('3')" [class.selected]="form.get('duration').value == '3'">
           <ion-icon src="assets/icons/calendar.svg"></ion-icon>
           Up to 3 months
         </ion-button>
       </ion-col>
       <ion-col size="2">
-        <ion-button>
+        <ion-button (click)="setDuration('3-6')" [class.selected]="form.get('duration').value == '3-6'">
           <ion-icon src="assets/icons/calendar.svg"></ion-icon>
           3 to 6 months
         </ion-button>
       </ion-col>
       <ion-col size="2">
-        <ion-button>
+        <ion-button (click)="setDuration('6-12')" [class.selected]="form.get('duration').value == '6-12'">
           <ion-icon src="assets/icons/calendar.svg"></ion-icon>
           6 to 12 months
         </ion-button>
       </ion-col>
       <ion-col size="2">
-        <ion-button>
+        <ion-button (click)="setDuration('+12 months')" [class.selected]="form.get('duration').value == '+12 months'">
           <ion-icon src="assets/icons/calendar.svg"></ion-icon>
           +12 months
         </ion-button>
       </ion-col>
-      <ion-col size="2">
+      <ion-col size="2" (click)="setDuration('+3 years')" [class.selected]="form.get('duration').value == '+3 years'">
         <ion-button>
           <ion-icon src="assets/icons/calendar.svg"></ion-icon>
           +3 years
@@ -93,12 +93,12 @@
     </ion-row>
     <ion-row>
       <ion-col size="2" class="button-col">
-        <ion-button fill="clear" class="clear-btn" (click)="submit()">
+        <ion-button fill="clear" class="clear-btn" (click)="goBack()">
           Back
         </ion-button>
       </ion-col>
       <ion-col class="button-col">
-        <ion-button (click)="submit()">
+        <ion-button (click)="next()">
           Next
         </ion-button>
       </ion-col>

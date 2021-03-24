@@ -1,0 +1,103 @@
+<ion-content [fullscreen]="true">
+  <ion-grid class="grid">
+    <ion-row class="ion-padding row">
+      <ion-col class="ion-padding">
+        <ion-label class="logo-text ion-padding">digg</ion-label>
+      </ion-col>
+      <ion-col class="ion-padding">
+        <ion-progress-bar value="0.6"></ion-progress-bar>
+      </ion-col>
+    </ion-row>
+    <ion-row class="question">
+      <ion-col>
+        <ion-label>
+          Why do you want to come to Dubai?
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row class="question">
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Lifestyle')" [class.selected]="form.get('purpose').value=='Lifestyle'">
+          <ion-icon src="assets/icons/smiley-star.svg"></ion-icon>
+          Lifestyle
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Work Opportunities')"
+          [class.selected]="form.get('purpose').value=='Work Opportunities'">
+          <ion-icon src="assets/icons/admin.svg"></ion-icon>
+          Work Opportunities
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Education')" [class.selected]="form.get('purpose').value=='Education'">
+          <ion-icon src="assets/icons/education.svg"></ion-icon>
+          Education
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Finance')" [class.selected]="form.get('purpose').value=='Finance'">
+          <ion-icon src="assets/icons/finance.svg"></ion-icon>
+          Finance
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Tourism')" [class.selected]="form.get('purpose').value=='Tourism'">
+          <ion-icon src="assets/icons/plane.svg"></ion-icon>
+          Tourism
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Family')" [class.selected]="form.get('purpose').value=='Family'">
+          <ion-icon src="assets/icons/family.svg"></ion-icon>
+          Family
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Business')" [class.selected]="form.get('purpose').value=='Business'">
+          <ion-icon src="assets/icons/business.svg"></ion-icon>
+          Business
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Security')" [class.selected]="form.get('purpose').value=='Security'">
+          <ion-icon src="assets/icons/security.svg"></ion-icon>
+          Security
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('The Weather')" [class.selected]="form.get('purpose').value=='The Weather'">
+          <ion-icon src="assets/icons/weather.svg"></ion-icon>
+          The Weather
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Meeting New People')"
+          [class.selected]="form.get('purpose').value=='Meeting New People'">
+          <ion-icon src="assets/icons/handshake.svg"></ion-icon>
+          Meeting New People
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="setPurpose('Culture')" [class.selected]="form.get('purpose').value=='Culture'">
+          <ion-icon src="assets/icons/culture.svg"></ion-icon>
+          Culture
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col size="2" class="button-col">
+        <ion-button fill="clear" class="clear-btn" (click)="goBack()">
+          Back
+        </ion-button>
+      </ion-col>
+      <ion-col class="button-col">
+        <ion-button (click)="next()">
+          Next
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
