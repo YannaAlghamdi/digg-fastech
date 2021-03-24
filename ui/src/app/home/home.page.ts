@@ -25,7 +25,7 @@ export class HomePage {
       nationality: ['', Validators.required],
       country: ['', Validators.required],
       contactNo: ['', Validators.required],
-      emailAddress: ['', Validators.required]
+      emailAddress: ['', [Validators.required, Validators.email]]
     });
 
     this.nationalities = [

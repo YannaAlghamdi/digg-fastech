@@ -6,6 +6,20 @@ ion-content {
     background-size: 55% 160%;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    ion-content {
+      background: none !important;
+    }
+    .logo-text {
+      color: #000 !important;
+    }
+    .quote {
+      display: none !important;
+    }
+  }
+
 *, ion-label {
   font-family: 'Sora Regular' !important;
 }
@@ -33,6 +47,7 @@ ion-content {
 .gender-options {
   margin-top: 1rem;
   padding-left: 1rem;
+  display: flex;
 }
 
 .checkbox, .option {
@@ -88,6 +103,7 @@ ion-checkbox {
   font-family: 'IBM Bold' !important;
   color: #fff;
   font-size: 2rem;
+  padding: 0;
 }
 
 

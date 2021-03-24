@@ -10,6 +10,17 @@ ion-content {
     font-family: 'Sora Regular' !important;
   }
   
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    ion-content {
+      background: none !important;
+    }
+    ion-row {
+      display: flex !important;
+      flex-flow: column !important;
+    }
+  }
   
   .contact-label {
     --padding-start: 0;
